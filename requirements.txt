@@ -1,0 +1,8 @@
+discord.py==2.0
+discord-py-interactions==3.0.2
+python-dotenv
+psycopg2-binary
+requests==2.31.0
+Flask==2.3.3
+werkzeug==2.3.7
+audioop-lts
