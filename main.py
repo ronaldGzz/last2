@@ -560,4 +560,8 @@ async def slash_publish_new_game(interaction: discord.Interaction, theme: discor
             embed_var = discord.Embed(title=message2, color=0xf00226)
             await interaction.followup.send(embed=embed_var, ephemeral=True)
 
-client.run(os.getenv("DISCORD_TOKEN"))
+@client.event
+async def on_ready():
+    print(f"✅ Logged in as {client.user} (ID: {client.user.id})")
+
+client.run("YOUR_BOT_TOKEN")
