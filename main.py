@@ -560,4 +560,4 @@ async def slash_publish_new_game(interaction: discord.Interaction, theme: discor
             embed_var = discord.Embed(title=message2, color=0xf00226)
             await interaction.followup.send(embed=embed_var, ephemeral=True)
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv("DISCORD_TOKEN"))
